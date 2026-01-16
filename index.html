@@ -7,13 +7,24 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="qr-wrapper">
-      <h1>Generate QR Code static</h1>
-      <p>Acest cod QR nu expira</p>
+    <div class="qr-card">
+      <h1>QR code static</h1>
+      <p>Introdu linkul si genereaza codul QR</p>
+
+      <input
+        type="url"
+        id="qrInput"
+        placeholder="https://exemplu.ro/pagina"
+        required
+      />
+
+      <button id="generateBtn">Genereaza QR</button>
 
       <div id="qr"></div>
 
-      <button id="downloadQr">Descarca QR</button>
+      <button id="downloadBtn" class="download" style="display: none">
+        Descarca QR
+      </button>
     </div>
 
     <!-- Librarie QRCode.js -->

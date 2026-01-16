@@ -1,64 +1,71 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-    /* RESET BASIC */
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: Arial, Helvetica, sans-serif;
-    }
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0f172a;
+  color: #ffffff;
+}
 
-    /* CENTRARE PE PAGINA */
-    body {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: #0f172a;
-      color: #ffffff;
-    }
+.qr-card {
+  background: #111827;
+  padding: 32px;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+  text-align: center;
+}
 
-    /* CARD CENTRAL */
-    .qr-wrapper {
-      background: #111827;
-      padding: 32px;
-      border-radius: 16px;
-      text-align: center;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.35);
-      max-width: 360px;
-      width: 100%;
-    }
+.qr-card h1 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
 
-    .qr-wrapper h1 {
-      font-size: 20px;
-      margin-bottom: 12px;
-      font-weight: 600;
-    }
+.qr-card p {
+  font-size: 14px;
+  opacity: 0.85;
+  margin-bottom: 20px;
+}
 
-    .qr-wrapper p {
-      font-size: 14px;
-      opacity: 0.85;
-      margin-bottom: 24px;
-    }
+.qr-card input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
 
-    /* CONTAINER QR */
-    #qr {
-      display: flex;
-      justify-content: center;
-      margin-bottom: 24px;
-    }
+.qr-card button {
+  width: 100%;
+  padding: 12px;
+  background: #3b82f6;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
 
-    /* BUTON */
-    .qr-wrapper button {
-      background: #3b82f6;
-      color: #ffffff;
-      border: none;
-      padding: 12px 20px;
-      border-radius: 8px;
-      font-size: 14px;
-      cursor: pointer;
-      transition: background 0.2s ease;
-    }
+.qr-card button:hover {
+  background: #2563eb;
+}
 
-    .qr-wrapper button:hover {
-      background: #2563eb;
-    }
+#qr {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.download {
+  background: transparent;
+  border: 1px solid #3b82f6;
+}
